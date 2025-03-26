@@ -1,0 +1,457 @@
+html {
+    scroll-behavior: smooth;
+}
+
+        /* Barre d'icônes en haut */
+        .top-bar {
+            color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .top-bar .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .top-bar .social-icons a {
+            color: #333;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .top-bar .social-icons a:hover {
+            color: #4caf50; /* Couleur au survol */
+        }
+/*Navbar*/
+.navbar {
+    position: fixed; /* Fixée sur le côté gauche */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Pleine hauteur de la fenêtre */
+    width: 250px; /* Largeur de la navbar */
+    background-color: #333; /* Couleur de fond sombre */
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    padding-top: 20px; /* Espace en haut */
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Rend l'image ronde */
+    background-size: cover; /* Ajuste l'image au conteneur */
+    background-position: center; /* Centre l'image */
+    margin-bottom: 15px;
+    border: 3px solid #fff; /* Bordure blanche autour de l'image */
+}
+
+.navbar ul {
+    list-style-type: none; /* Retire les puces */
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Prend toute la largeur */
+}
+
+.navbar li {
+    width: 100%;
+}
+
+.navbar a {
+    display: block; /* Liens comme blocs pour cliquer sur toute la zone */
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Animation au survol */
+}
+
+.navbar a:hover {
+    background-color: #575757; /* Couleur au survol */
+}
+
+/*Fin navbar*/
+
+/*Google fonts*/
+.montserrat{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+.lexend-giga{
+    font-family: "Lexend Giga", serif;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+  }
+
+/*Fin Google fonts*/
+
+/*Titre du milieu*/
+.titre{
+    padding-top: 25%;
+}
+/*Fin titre du mileu*/
+
+/* Contenu principal */
+.content {
+    margin-left: 250px; /* Décale le contenu pour ne pas chevaucher la navbar */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.contenu {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px; /* Espace avec la section précédente */
+    padding: 20px;
+    /* Retirer height: 100vh pour éviter les problèmes */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content-box {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Permet deux colonnes */
+    box-sizing: border-box;
+}
+
+.content-box h2 {
+    color: #333;
+}
+
+.content-box p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.content-box ul {
+    padding-left: 20px;
+    color: #555;
+}
+
+.content-box ul li {
+    margin-bottom: 10px;
+}
+
+#experience {
+    padding: 30px;
+    background-color: #f9f9f9; /* Couleur douce pour le fond */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+#experience h2 {
+    font-size: 28px;
+    color: #333; /* Couleur du texte */
+    margin-bottom: 15px;
+}
+
+.experience-text {
+    font-size: 18px;
+    color: #555; /* Couleur secondaire */
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px; /* Largeur maximale pour un meilleur rendu */
+}
+
+
+/* Style du bouton */
+.project-button {
+    display: inline-block;
+    background-color: #333; /* Couleur sombre élégante */
+    color: #ffffff; /* Texte blanc */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #555; /* Couleur plus foncée au survol */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Léger effet de levée */
+}
+
+/* Style de la modale */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    display: none; /* Caché par défaut */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Afficher le pop-up lorsqu'il est ciblé */
+.popup:target {
+    display: flex;
+}
+
+/* Contenu de la modale */
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90vw; /* Limite la largeur du popup */
+    max-height: 90vh; /* Limite la hauteur du popup */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image ou iframe dans la modale */
+.popup-content img,
+.popup-content iframe {
+    max-width: 100%;
+    max-height: 90vh; /* Limite la hauteur à 90% de la fenêtre */
+    object-fit: contain; /* Ajuste l'image en gardant ses proportions */
+    border-radius: 5px;
+}
+
+/* Bouton de fermeture */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.popup-close:hover {
+    color: black;
+}
+
+.popup-content video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/*Fin contenu principal*/
+
+/*Barre de progression*/
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.progress-bar {
+    background-color: #e0e0e0; /* Couleur de fond */
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4CAF50; /* Couleur de la barre */
+    border-radius: 5px;
+    transition: width 0.3s ease; /* Animation fluide */
+    text-align: center;
+}
+/*Fin barre de progression*/
+
+/* Section de la frise chronologique */
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 0;
+    width: 80%;
+    max-width: 900px;
+    /* Ajout pour forcer la hauteur spécifique au contenu de la frise */
+    overflow: hidden;
+}
+
+#timeline h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Conteneur de la frise */
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0; /* Fixe la hauteur à celle de la frise */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    background-color: #333;
+    z-index: 1;
+}
+
+/* Éléments individuels */
+.timeline-item {
+    position: relative;
+    margin: 50px 0; /* Plus d'espace entre les éléments */
+    text-align: left;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    float: left;
+    text-align: right;
+    margin-right: 60px; /* Espace avec la ligne centrale */
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    float: right;
+    text-align: left;
+    margin-left: 60px; /* Espace avec la ligne centrale */
+}
+
+.timeline-item .timeline-date {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item .timeline-content {
+    position: relative;
+    width: 40%; /* Ajuste la largeur des boîtes */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.timeline-item .timeline-content h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.timeline-item .timeline-content p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Nettoyage des flottants */
+.timeline-item:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Boîte principale */
+.company-box {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #ffffff; /* Fond blanc */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    border: 1px solid #ddd; /* Bordure fine */
+}
+
+/* En-tête de l'entreprise */
+
+.company-header {
+    text-align: center;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.title-logo {
+    display: flex;
+    align-items: center;  /* Alignement vertical */
+    justify-content: center;  /* Centrer horizontalement */
+    gap: 10px;  /* Espacement entre le titre et le logo */
+}
+
+.company-header h2 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.company-header .tagline {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+.logo-repertoire {
+    height: 50px;  /* Taille du logo */
+}
+
+/*Survol*/
+.zoom:hover{
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.social-icons a {
+    color: #f9f9f9;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #4caf50; /* Change to your preferred hover color */
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+
+
+

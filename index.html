@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <!--Fin Google fonts-->
+
+        <!--Fontawesome-->
+        <script src="https://kit.fontawesome.com/1b7bc6e4cf.js" crossorigin="anonymous"></script>
+        <!--Fin Fontawsome-->
+
+        <title>Portfolio</title>
+    </head>
+
+    <header class="montserrat">
+
+        <nav class="navbar">
+
+            <div class="profile-photo" style="background-image: url('img/17134291882167.jpg'); margin-left: 15px;">
+            </div>
+
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#veille">Veille</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <body class="lexend-giga content">
+
+        <div class="top-bar">
+            <div class="social-icons">
+                <a href="mailto:siazon.jeanchristophe.pro@gmail.com"><i class="fas fa-envelope"></i></a> 
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a> 
+                <a href="https://www.linkedin.com/in/jean-christophe-siazon-95aa462ba/" target="_blank"><i class="fab fa-linkedin"></i></a> 
+                <a href="tel:+33619737802"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+
+        <!-- Section Titre -->
+        <center class="titre" id="home" style="margin-bottom: 100px;">
+            <h1 style="font-size: 60px;">Portfolio</h1> 
+            <h3>Jean-Christophe Siazon</h3>
+        </center>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+        <!-- Section À propos -->
+        <div id="about" style="padding: 50px;">
+            <h1>À propos</h1>
+    
+            <div class="contenu" style="margin-bottom: 50px;">
+                <h2>Présentation</h2>
+                <center>
+                <p style="font-size: larger;">
+                    Je m'appelle Jean-Christophe Siazon, étudiant en première année de BTS SIO spécialité SLAM (Solutions Logicielles et Applications Métiers) en alternance dans le domaine de l'informatique. Passionné par le développement logiciel et les technologies numériques, je me forme à concevoir et maintenir des applications répondant aux besoins des entreprises. Mon alternance me permet de mettre en pratique mes compétences tout en acquérant une expérience précieuse pour devenir un développeur polyvalent et innovant.
+                </p>
+                </center>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="#cvPopup" class="project-button">Mon CV</a>
+                </div>
+                
+                <!-- Pop-up (modale) -->
+                <div id="cvPopup" class="popup">
+                    <div class="popup-content">
+                        <img src="img/CV_Jean-Christophe_SIAZON (1).jpg" alt="Aperçu de l'image">
+                        <a href="#about" class="popup-close">×</a>
+                    </div>
+                </div>
+
+
+            
+            </div>
+        </div>
+
+    
+            <!-- Conteneur des descriptions SISR et SLAM -->
+            <div class="container" style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <!-- Description du BTS SISR -->
+                <div class="content-box" style="flex: 1; min-width: 300px; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <h2>BTS SIO - Option SISR</h2>
+                    <p><strong>SISR</strong> (Solutions d'Infrastructure, Systèmes et Réseaux) forme des professionnels capables de déployer, administrer et maintenir des infrastructures réseau et des systèmes informatiques. Cette spécialité est idéale pour ceux qui souhaitent travailler dans la gestion et la sécurité des réseaux d'entreprise.</p>
+                    <h3>Débouchés/Métiers :</h3>
+                    <ul>
+                        <li>Administrateur système et réseau</li>
+                        <li>Technicien support informatique</li>
+                        <li>Responsable sécurité informatique</li>
+                        <li>Installateur et mainteneur réseau</li>
+                        <li>Technicien d’infrastructure</li>
+                    </ul>
+                </div>
+    
+                <!-- Description du BTS SLAM -->
+                <div class="content-box" style="flex: 1; min-width: 300px; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <h2>BTS SIO - Option SLAM</h2>
+                    <p><strong>SLAM</strong> (Solutions Logicielles et Applications Métiers) prépare les étudiants à concevoir, développer et maintenir des logiciels et des applications répondant aux besoins des entreprises. Cette spécialité est parfaite pour ceux qui souhaitent se concentrer sur la programmation et le développement.</p>
+                    <h3>Débouchés/Métiers :</h3>
+                    <ul>
+                        <li>Développeur d'applications</li>
+                        <li>Analyste-programmeur</li>
+                        <li>Concepteur de solutions logicielles</li>
+                        <li>Technicien de maintenance en développement</li>
+                        <li>Chef de projet junior en développement</li>
+                    </ul>
+                </div>
+            </div>
+
+            <br><br>
+            <!--Barre de progression-->
+            <div class="skill">
+                <span>HTML/CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;">60%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>PHP</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%;">40%</div>
+                </div>
+            </div> 
+            <div class="skill">
+                <span>SQL</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 30%;">30%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>C</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 10%;">10%</div>
+                </div>
+            </div>
+            <!--Fin barre de progression-->
+
+                <br><br>
+            
+                <!--Frise chronologique-->
+            <div id="parcours" class="lexend-giga">
+                <section id="timeline" style="margin-top: 50px; padding: 50px;">
+
+                <h1>Parcours</h1>
+
+                    <div id="experience" style="margin: 50px; text-align: center;">
+                        <h2>Mon Expérience</h2>
+                        <p class="experience-text">
+                            Au cours de mes 3 mois en entreprise, j'ai acquis une expérience polyvalente en participant à des tâches RH, 
+                            comme la gestion des déclarations de salariés, tout en contribuant à des projets web, notamment 
+                            la création d'un petit site et des mises à jour sur WordPress. J'ai également touché à des aspects de gestion,
+                            comme s'occuper du parc informatique (préparer les ordinateurs, les mettre à jour...) 
+                            renforçant ainsi ma polyvalence et mon adaptabilité.
+                        </p>
+                    </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content">
+                            <h2>En cours</h2>
+                            <p>Poursuite du BTS SIO avec l'objectif d'obtenir dans les années futurs, un master en informatique.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h2>Début du BTS SIO</h2>
+                            <p>Inscription en BTS SIO (Option SLAM) en alternance.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023</div>
+                            <div class="timeline-content">
+                                <h2>Baccalauréat</h2>
+                                <p>Obtention du Bac Technologique en STMG avec mention.</p>
+                            </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022</div>
+                            <div class="timeline-content">
+                            <h2>Entrée au lycée</h2>
+                            <p>Début des études en seconde générale.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021</div>
+                        <div class="timeline-content">
+                            <h2>Brevet des collèges</h2>
+                            <p>Obtention du Brevet des collèges avec mention.</p>
+                        </div>
+                    </div>
+                </div>
+
+                </section>
+            </div>
+                <!--Fin frise chronologique-->
+                <br><br><br><br>
+                <!--Présentation alternance-->
+        <div style="padding: 50px;">
+
+                <h1>Mon Alternance</h1>
+
+            <!-- Section contenant la présentation -->
+            <div id="company-details" class="company-box">
+                <div class="company-header">
+                    <div class="title-logo">
+                        <h2>Le Répertoire de Gaspard</h2>
+                        <img src="img/images.png" alt="Logo" class="logo-repertoire zoom">
+                    </div>
+                    <p class="tagline">Une entreprise spécialisée dans le service à la personne</p>
+                </div> <!-- En-tête de l'entreprise -->
+        
+            
+                <div class="company-content">
+                    <h3>Présentation de l'entreprise</h3>
+                    <p>
+                        Le Répertoire de Gaspard est une entreprise française qui se consacre au service à la personne,
+                        particulièrement dans le domaine de la garde d’enfants. Avec une approche humaine et professionnelle,
+                        elle se distingue par ses valeurs centrées sur la bienveillance, la qualité et l'engagement.
+                    </p>
+
+                    <h3>Valeurs de l'entreprise</h3>
+                    <ul>
+                        <li><strong>Excellence :</strong> Proposer des prestations de haute qualité adaptées à chaque famille.</li>
+                        <li><strong>Engagement :</strong> Garantir la satisfaction des clients et des employés.</li>
+                        <li><strong>Respect :</strong> Placer les relations humaines au cœur des préoccupations.</li>
+                    </ul>
+
+                    <h3>Les missions principales</h3>
+                    <p>
+                        L'entreprise accompagne les familles dans leur quotidien en leur proposant des solutions de garde
+                        d'enfants fiables et personnalisées. Elle valorise également le développement des compétences de ses
+                        intervenants à travers des formations continues.
+                    </p>
+                </div>
+            </div>
+
+            <div id="pict-details" class="company-box">
+                <div class="company-header">
+                    <div class="title-logo">
+                        <h2>Paris Institute of Childcare Training</h2>
+                        <img src="img/images.jpg" alt="Logo PICT" class="logo-repertoire zoom">
+                    </div>
+                    <p class="tagline">Une institution de formation au cœur de l'innovation éducative</p>
+                </div>
+            
+                <div class="company-content">
+                    <h3>Présentation de l'institut</h3>
+                    <p>
+                        Situé à Paris, le Paris Institute of Childcare Training (PICT) est un centre de formation reconnu pour
+                        la qualité de ses programmes dédiés à la petite enfance. L'institut combine pédagogie moderne et apprentissage
+                        pratique pour préparer les futurs professionnels à exceller dans leur domaine.
+                    </p>
+            
+                    <h3>Valeurs de l'institut</h3>
+                    <ul>
+                        <li><strong>Innovation :</strong> Adopter des pratiques éducatives modernes pour mieux accompagner les enfants.</li>
+                        <li><strong>Excellence :</strong> Assurer une formation rigoureuse et de qualité.</li>
+                        <li><strong>Ouverture :</strong> Encourager la diversité et la collaboration internationale.</li>
+                    </ul>
+            
+                    <h3>Les missions principales</h3>
+                    <p>
+                        PICT forme des éducateurs spécialisés, des assistants maternels et d'autres professionnels de la petite enfance.
+                        L'accent est mis sur l'acquisition de compétences pratiques et une compréhension approfondie des besoins des jeunes
+                        enfants.
+                    </p>
+                </div>
+            </div>   
+        </div>
+
+        <div style="padding: 50px;">
+
+            <h1>Mes projets</h1>    
+
+            <section id="projets" class="contenu">
+        <center><div class="container">
+                    <div class="content-box">
+                        <h2>Free</h2>
+                        <p>Création d'un site d'intervention pour assurer un bon suivi pour Free.</p>
+                        <a href="#popup1" class="project-button">Voir les détails</a>
+                    </div>
+                    <div class="content-box">
+                        <h2>E-Enseignement</h2>
+                        <p>Création d'un site e-enseignenment pour permettre aux élèves et professeurs d'accéder aux cours et exercices.</p>
+                        <a href="#popup2" class="project-button">Voir les détails</a>
+                    </div>
+                </div>
+                <br>
+                <div class="container" style="padding-left: 315px;">
+                    <div class="content-box">
+                        <h2>Site: Droit des enfants</h2>
+                        <p>Création d'un site sur les droits des enfants, permettant de sensibilisé et informer les personnes plus agées.</p>
+                        <a href="#popup3" class="project-button">Voir les détails</a>
+                    </div>
+                </div></center>
+            </section>
+        </div>
+    
+        <!-- Pop-up Modal -->
+        <div id="popup1" class="popup">
+            <div class="popup-content">
+                <video controls autoplay>
+                    <source src="img/Enregistrement 2025-02-01 221155.mp4" type="video/mp4">
+                </video>
+                <a href="#projets" class="popup-close">×</a>
+            </div>
+        </div>
+    
+        <div id="popup2" class="popup">
+            <div class="popup-content">
+                <video controls autoplay>
+                    <source src="img/Enregistrement 2025-02-01 22502533.mp4" type="video/mp4">
+                </video>
+                <a href="#projets" class="popup-close">×</a>
+            </div>
+        </div>
+
+        <div id="popup3" class="popup">
+            <div class="popup-content">
+                <img src="img/chilrights.png" alt="Aperçu de l'image"> 
+                <a href="#projets" class="popup-close">×</a>
+            </div>
+        </div>
+    
+
+        </div>
+
+    </body>
+    
+
+    <footer id="contact">
+        <h2>Me Contacter</h2>
+        <div class="social-icons">
+            <a href="siazon.jeanchristophe.pro"><i class="fas fa-envelope"></i></a> &nbsp;
+            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a> &nbsp;
+            <a href="https://www.linkedin.com/in/jean-christophe-siazon-95aa462ba/" target="_blank"><i class="fab fa-linkedin"></i></a> &nbsp;
+            <a href="tel:+33619737802"><i class="fas fa-phone"></i></a>
+        </div>
+        <p>© 2025 Jean-Christophe Siazon. Tous droits réservés.</p>
+    </div>
+    </footer>
+</html>
