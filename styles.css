@@ -450,3 +450,35 @@ footer p {
     font-size: 14px;
     margin-top: 20px;
 }
+/*Fin survol*/
+
+/*Carousel*/
+.carousel {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  padding: 20px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+}
+
+.carousel .content-box {
+  flex: 0 0 auto;
+  width: 300px;
+  scroll-snap-align: start;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.carousel .content-box:hover {
+  transform: scale(1.05);
+}
+/*Fin carrousel*/
