@@ -103,17 +103,38 @@
     </div>
   </section>
 
-  <!-- Compétences -->
-  <section id="skills" class="contenu">
+<!-- Section Compétences -->
+<section id="skills" class="contenu">
     <h1>Compétences</h1>
-    <div class="skill"><span>HTML/CSS</span><div class="progress-bar"><div class="progress progress-html">50%</div></div></div>
-    <div class="skill"><span>PHP</span><div class="progress-bar"><div class="progress progress-php">30%</div></div></div>
-    <div class="skill"><span>SQL</span><div class="progress-bar"><div class="progress progress-sql">20%</div></div></div>
-    <div class="skill"><span>C</span><div class="progress-bar"><div class="progress progress-c">10%</div></div></div>
-    <div class="skill"><span>Git</span><div class="progress-bar"><div class="progress progress-git">20%</div></div></div>
-  </section>
 
-  <!-- Certifications -->
+    <!-- Hard Skills -->
+    <div class="skills-section">
+        <h2>Hard Skills</h2>
+        <ul class="skills-list">
+            <li><i class="fas fa-code"></i> Développement web (HTML, CSS, PHP, SQL)</li>
+            <li><i class="fas fa-database"></i> Gestion de bases de données</li>
+            <li><i class="fas fa-cogs"></i> Programmation en C</li>
+            <li><i class="fab fa-git-alt"></i> Utilisation de Git et GitHub</li>
+            <li><i class="fas fa-cloud"></i> Déploiement avec Render</li>
+        </ul>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="skills-section">
+        <h2>Soft Skills</h2>
+        <ul class="skills-list">
+            <li><i class="fas fa-users"></i> Travail en équipe et collaboration</li>
+            <li><i class="fas fa-project-diagram"></i> Gestion de projet et organisation</li>
+            <li><i class="fas fa-lightbulb"></i> Résolution de problèmes</li>
+            <li><i class="fas fa-sync-alt"></i> Adaptabilité et apprentissage continu</li>
+            <li><i class="fas fa-eye"></i> Sens du détail et UX design</li>
+        </ul>
+    </div>
+</section>
+
+
+  
+  <!-- Certifications 
   <section id="certifications" class="contenu">
     <h1>Certifications</h1>
     <div class="container">
@@ -131,115 +152,94 @@
       </div>
     </div>
   </section>
+  -->
 
   <!-- Parcours -->
-  <section id="parcours" class="contenu">
-    <h1>Parcours</h1>
+<section id="parcours" class="contenu">
+  <h1>Parcours</h1>
+  <div class="timeline">
 
-    <div id="experience" class="center-box">
-      <h2>Mon expérience</h2>
-      <p class="experience-text">
-        Participation à des tâches RH et administratives, contributions web (petit site, mises à jour WordPress), et gestion du parc informatique (préparation, mises à jour). Polyvalence et adaptabilité renforcées.
-      </p>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-date">2025</div>
-        <div class="timeline-content">
-          <h2>En cours</h2>
-          <p>Alternance en BTS SIO, avec objectif futur de master en informatique.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-date">2024</div>
-        <div class="timeline-content">
-          <h2>Début du BTS SIO</h2>
-          <p>Inscription en BTS SIO (Option SLAM) en alternance.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-date">2023</div>
-        <div class="timeline-content">
-          <h2>Baccalauréat</h2>
-          <p>Obtention du Bac Technologique STMG avec mention.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-date">2022</div>
-        <div class="timeline-content">
-          <h2>Entrée au lycée</h2>
-          <p>Début des études en seconde générale.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-date">2021</div>
-        <div class="timeline-content">
-          <h2>Brevet</h2>
-          <p>Obtention du Brevet des collèges avec mention.</p>
-        </div>
+    <div class="timeline-item left">
+      <div class="timeline-date">2021</div>
+      <div class="timeline-card">
+        <h2>Brevet des collèges</h2>
+        <p>Obtention du Brevet avec mention.</p>
       </div>
     </div>
-  </section>
+
+    <div class="timeline-item right">
+      <div class="timeline-date">2022</div>
+      <div class="timeline-card">
+        <h2>Lycée STMG</h2>
+        <p>Entrée au lycée en filière STMG.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-date">2024</div>
+      <div class="timeline-card">
+        <h2>Baccalauréat</h2>
+        <p>Obtention du Bac Technologique STMG avec mention.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-date">2024–2026</div>
+      <div class="timeline-card">
+        <h2>BTS SIO SLAM</h2>
+        <p>Formation en alternance dans le développement logiciel et les applications métiers.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
   <!-- Mon alternance -->
-  <section id="alternance" class="contenu">
-    <h1>Mon alternance</h1>
+<section id="alternance" class="contenu">
+  <h1>Mon alternance</h1>
 
-    <div class="company-box">
-      <div class="company-header">
+  <!-- Employeur principal -->
+  <div class="company-box">
+    <div class="company-header">
+      <div class="title-logo">
+        <img src="img/images.jpg" alt="Logo du PICT" class="logo-repertoire zoom"/>
+        <h2>Paris Institute of Childcare Training (PICT)</h2>
+      </div>
+      <p class="tagline">Mon employeur principal en alternance</p>
+    </div>
+
+    <div class="company-content">
+      <h3>Présentation</h3>
+      <p>
+        Le Paris Institute of Childcare Training est un centre de formation reconnu dans le domaine de la petite enfance. 
+        Il combine pédagogie moderne et apprentissage pratique pour former des professionnels qualifiés.
+      </p>
+
+      <h3>Partenariat</h3>
+      <div class="partner">
         <div class="title-logo">
-          <h2>Le Répertoire de Gaspard</h2>
           <img src="img/images.png" alt="Logo du Répertoire de Gaspard" class="logo-repertoire zoom"/>
+          <h3>Le Répertoire de Gaspard</h3>
         </div>
-        <p class="tagline">Entreprise spécialisée dans le service à la personne</p>
+        <p>
+          Agence spécialisée dans le service à la personne et la garde d’enfants, partenaire direct du PICT. 
+          Ensemble, ils forment une structure complémentaire qui associe formation et accompagnement des familles.
+        </p>
       </div>
 
-      <div class="company-content">
-        <h3>Présentation</h3>
-        <p>Entreprise française dédiée au service à la personne, particulièrement à la garde d’enfants, avec des valeurs de bienveillance, qualité et engagement.</p>
-
-        <h3>Valeurs</h3>
-        <ul>
-          <li><strong>Excellence :</strong> prestations de qualité adaptées.</li>
-          <li><strong>Engagement :</strong> satisfaction clients/employés.</li>
-          <li><strong>Respect :</strong> relations humaines au cœur.</li>
-        </ul>
-
-        <h3>Missions principales</h3>
-        <p>Accompagnement des familles via des solutions de garde personnalisées et formation continue des intervenants.</p>
-      </div>
+      <h3>Missions réalisées</h3>
+      <ul>
+        <li><strong>Gestion du parc informatique :</strong> mise à jour et maintenance des machines.</li>
+        <li><strong>Développement web :</strong> manipulation de WordPress avec Elementor pour améliorer le site du Le Répertoire de Gaspard.</li>
+        <li><strong>Projet applicatif :</strong> conception d’une application web d’inventaire et de gestion des stocks.</li>
+        <li><strong>Support technique :</strong> aide et correction du site du PICT.</li>
+      </ul>
     </div>
+  </div>
+</section>
 
-    <div class="company-box">
-      <div class="company-header">
-        <div class="title-logo">
-          <h2>Paris Institute of Childcare Training (PICT)</h2>
-          <img src="img/images.jpg" alt="Logo du PICT" class="logo-repertoire zoom"/>
-        </div>
-        <p class="tagline">Institution de formation au cœur de l'innovation éducative</p>
-      </div>
-
-      <div class="company-content">
-        <h3>Présentation</h3>
-        <p>Centre de formation reconnu pour la petite enfance, combinant pédagogie moderne et apprentissage pratique.</p>
-
-        <h3>Valeurs</h3>
-        <ul>
-          <li><strong>Innovation :</strong> pratiques éducatives modernes.</li>
-          <li><strong>Excellence :</strong> formation rigoureuse.</li>
-          <li><strong>Ouverture :</strong> diversité et collaboration internationale.</li>
-        </ul>
-
-        <h3>Missions principales</h3>
-        <p>Formation d’éducateurs spécialisés, assistants maternels et autres professionnels, avec un accent sur la pratique et la compréhension des besoins des enfants.</p>
-      </div>
-    </div>
-  </section>
 
   <!-- Projets -->
   <section id="projets" class="contenu">
@@ -350,16 +350,33 @@
   </section>
 
   <!-- Footer -->
-  <footer id="contact">
-    <h2>Me contacter</h2>
-    <div class="social-icons">
-      <a href="mailto:siazon.jeanchristophe.pro@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/JC12062006/portfolio" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/jean-christophe-siazon-95aa462ba/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-      <a href="tel:+33619737802"><i class="fas fa-phone"></i></a>
+<footer id="contact">
+  <div class="footer-container">
+    
+    <!-- Contact -->
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p><a href="mailto:siazon.jeanchristophe.pro@gmail.com">siazon.jeanchristophe.pro@gmail.com</a></p>
+      <p><a href="tel:+33619737802">+33 6 19 73 78 02</a></p>
     </div>
-    <p>© 2025 Jean-Christophe Siazon. Tous droits réservés.</p>
-  </footer>
+
+    <!-- Réseaux -->
+    <div class="footer-section">
+      <h3>Réseaux</h3>
+      <div class="footer-icons">
+        <a href="https://github.com/JC12062006/portfolio" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jean-christophe-siazon-95aa462ba/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-section">
+      <h3>© 2025</h3>
+      <p>Jean-Christophe Siazon — Portfolio BTS SIO SLAM</p>
+    </div>
+
+  </div>
+</footer>
 
 </body>
 </html>
