@@ -1,382 +1,615 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio — Jean-Christophe Siazon</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Jean-Christophe Siazon</title>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css"/>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Lexend:wght@400;700&display=swap" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Lexend:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fontawesome -->
-  <script src="https://kit.fontawesome.com/1b7bc6e4cf.js" crossorigin="anonymous"></script>
-</head>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/1b7bc6e4cf.js" crossorigin="anonymous"></script>
+  </head>
 
-<body class="content">
+  <body>
+    <main class="content">
 
-  <!-- Barre d'icônes en haut -->
-  <div class="top-bar">
-    <div class="social-icons">
-      <a href="mailto:siazon.jeanchristophe.pro@gmail.com" aria-label="Envoyer un email"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/JC12062006/portfolio" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/jean-christophe-siazon-95aa462ba/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="tel:+33619737802" aria-label="Téléphone"><i class="fas fa-phone"></i></a>
-    </div>
-  </div>
-
-  <!-- Header + Navbar -->
-  <header class="montserrat">
-    <nav class="navbar">
-      <div class="profile-photo" style="background-image: url('img/17134291882167.jpg');"></div>
-      <ul>
-        <li><a href="#home">Accueil</a></li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#parcours">Parcours</a></li>
-        <li><a href="#alternance">Mon alternance</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#veille">Veille</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Accueil -->
-  <section id="home" class="titre">
-    <h1>Portfolio</h1>
-    <h3>Jean-Christophe Siazon</h3>
-  </section>
-
-  <!-- À propos (ancienne version conservée) -->
-  <section id="about" class="contenu">
-    <h1>À propos</h1>
-    <h2>Présentation</h2>
-    <center>
-      <p class="intro">
-        Je m'appelle Jean-Christophe Siazon, étudiant en première année de BTS SIO spécialité SLAM (Solutions Logicielles et Applications Métiers) en alternance dans le domaine de l'informatique. Passionné par le développement logiciel et les technologies numériques, je me forme à concevoir et maintenir des applications répondant aux besoins des entreprises. Mon alternance me permet de mettre en pratique mes compétences tout en acquérant une expérience précieuse pour devenir un développeur polyvalent et innovant.
-      </p>
-    </center>
-    <div class="center">
-      <a href="#cvPopup" class="project-button"><i class="fas fa-file-alt"></i> Mon CV</a>
-    </div>
-
-    <!-- Pop-up CV -->
-    <div id="cvPopup" class="popup" aria-hidden="true">
-      <div class="popup-content" role="dialog" aria-label="Aperçu du CV">
-        <img src="img/CV alternance informatique Jean-Christophe.jpg" alt="CV de Jean-Christophe Siazon"/>
-        <a href="#about" class="popup-close" aria-label="Fermer">×</a>
-      </div>
-    </div>
-
-    <!-- Descriptions SLAM/SISR -->
-    <div class="container">
-      <div class="content-box">
-        <h2>BTS SIO - Option SISR</h2>
-        <p><strong>SISR</strong> forme des professionnels capables de déployer, administrer et maintenir des infrastructures réseau et des systèmes informatiques.</p>
-        <h3>Débouchés / Métiers</h3>
-        <ul>
-          <li>Administrateur système et réseau</li>
-          <li>Technicien support informatique</li>
-          <li>Responsable sécurité informatique</li>
-          <li>Technicien d’infrastructure</li>
-        </ul>
-      </div>
-
-      <div class="content-box">
-        <h2>BTS SIO - Option SLAM</h2>
-        <p><strong>SLAM</strong> prépare à concevoir, développer et maintenir des applications répondant aux besoins des entreprises.</p>
-        <h3>Débouchés / Métiers</h3>
-        <ul>
-          <li>Développeur d'applications</li>
-          <li>Analyste-programmeur</li>
-          <li>Concepteur de solutions logicielles</li>
-          <li>Technicien de maintenance en développement</li>
-          <li>Chef de projet junior</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-<!-- Section Compétences -->
-<section id="skills" class="contenu">
-    <h1>Compétences</h1>
-
-    <!-- Hard Skills -->
-    <div class="skills-section">
-        <h2>Hard Skills</h2>
-        <ul class="skills-list">
-            <li><i class="fas fa-code"></i> Développement web (HTML, CSS, PHP, SQL)</li>
-            <li><i class="fas fa-database"></i> Gestion de bases de données</li>
-            <li><i class="fas fa-cogs"></i> Programmation en C</li>
-            <li><i class="fab fa-git-alt"></i> Utilisation de Git et GitHub</li>
-            <li><i class="fas fa-cloud"></i> Déploiement avec Render</li>
-        </ul>
-    </div>
-
-    <!-- Soft Skills -->
-    <div class="skills-section">
-        <h2>Soft Skills</h2>
-        <ul class="skills-list">
-            <li><i class="fas fa-users"></i> Travail en équipe et collaboration</li>
-            <li><i class="fas fa-project-diagram"></i> Gestion de projet et organisation</li>
-            <li><i class="fas fa-lightbulb"></i> Résolution de problèmes</li>
-            <li><i class="fas fa-sync-alt"></i> Adaptabilité et apprentissage continu</li>
-            <li><i class="fas fa-eye"></i> Sens du détail et UX design</li>
-        </ul>
-    </div>
-</section>
-
-
-  
-  <!-- Certifications 
-  <section id="certifications" class="contenu">
-    <h1>Certifications</h1>
-    <div class="container">
-      <div class="content-box">
-        <h2>PIX</h2>
-        <p>Certification PIX validant mes compétences numériques (sécurité, programmation, collaboration).</p>
-      </div>
-      <div class="content-box">
-        <h2>OpenClassrooms</h2>
-        <p>Apprenez à créer votre site web avec HTML5 et CSS3 — Certificat de réussite.</p>
-      </div>
-      <div class="content-box">
-        <h2>Sololearn</h2>
-        <p>Certificats en PHP et SQL — fondamentaux backend.</p>
-      </div>
-    </div>
-  </section>
-  -->
-
-  <!-- Parcours -->
-<section id="parcours" class="contenu">
-  <h1>Parcours</h1>
-  <div class="timeline">
-
-    <div class="timeline-item left">
-      <div class="timeline-date">2021</div>
-      <div class="timeline-card">
-        <h2>Brevet des collèges</h2>
-        <p>Obtention du Brevet avec mention.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item right">
-      <div class="timeline-date">2022</div>
-      <div class="timeline-card">
-        <h2>Lycée STMG</h2>
-        <p>Entrée au lycée en filière STMG.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item left">
-      <div class="timeline-date">2024</div>
-      <div class="timeline-card">
-        <h2>Baccalauréat</h2>
-        <p>Obtention du Bac Technologique STMG avec mention.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item right">
-      <div class="timeline-date">2024–2026</div>
-      <div class="timeline-card">
-        <h2>BTS SIO SLAM</h2>
-        <p>Formation en alternance dans le développement logiciel et les applications métiers.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-  <!-- Mon alternance -->
-<section id="alternance" class="contenu">
-  <h1>Mon alternance</h1>
-
-  <!-- Employeur principal -->
-  <div class="company-box">
-    <div class="company-header">
-      <div class="title-logo">
-        <img src="img/images.jpg" alt="Logo du PICT" class="logo-repertoire zoom"/>
-        <h2>Paris Institute of Childcare Training (PICT)</h2>
-      </div>
-      <p class="tagline">Mon employeur principal en alternance</p>
-    </div>
-
-    <div class="company-content">
-      <h3>Présentation</h3>
-      <p>
-        Le Paris Institute of Childcare Training est un centre de formation reconnu dans le domaine de la petite enfance. 
-        Il combine pédagogie moderne et apprentissage pratique pour former des professionnels qualifiés.
-      </p>
-
-      <h3>Partenariat</h3>
-      <div class="partner">
-        <div class="title-logo">
-          <img src="img/images.png" alt="Logo du Répertoire de Gaspard" class="logo-repertoire zoom"/>
-          <h3>Le Répertoire de Gaspard</h3>
+      <!-- Barre d'icônes en haut -->
+      <div class="top-bar">
+        <div class="social-icons">
+          <a href="mailto:siazon.jeanchristophe.pro@gmail.com" aria-label="Envoyer un email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://github.com/JC12062006/portfolio"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jean-christophe-siazon-95aa462ba/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="tel:+33619737802" aria-label="Téléphone">
+            <i class="fas fa-phone"></i>
+          </a>
         </div>
+      </div>
+
+      <!-- Header + Navbar -->
+      <header class="montserrat">
+        <nav class="navbar">
+          <div class="profile-photo" style="background-image: url('img/17134291882167.jpg');"></div>
+          <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#alternance">Mon alternance</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#veille">Veille</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Accueil -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Portfolio</h1>
+          <h3 class="hero-subtitle">Jean-Christophe Siazon</h3>
+        </div>
+      </section>
+
+      <!-- À propos -->
+      <section id="about" class="contenu">
+        <h1>À propos</h1>
+        <h2>Présentation</h2>
+        <div class="intro-center">
+          <p class="intro">
+Je m'appelle Jean-Christophe Siazon, étudiant en première année de BTS SIO spécialité SLAM (Solutions Logicielles et Applications Métiers) en alternance dans le domaine de l'informatique. Passionné par le développement logiciel et les technologies numériques, j’aime concevoir et maintenir des applications répondant aux besoins des entreprises. Mais ce qui me motive particulièrement, c’est la gestion d’une équipe de développeurs en tant que chef de projet, où je peux coordonner, organiser et guider le travail collectif pour atteindre des objectifs ambitieux. Mon alternance me permet ainsi de mettre en pratique mes compétences techniques tout en développant mon sens du leadership et de l’organisation.
+          </p>
+        </div>
+
+        <div class="center">
+          <a href="#cvPopup" class="project-button"><i class="fas fa-file-alt"></i> Mon CV</a>
+        </div>
+
+        <!-- Pop-up CV -->
+        <div id="cvPopup" class="popup" aria-hidden="true">
+          <div class="popup-content" role="dialog" aria-label="Aperçu du CV">
+            <img src="img/CV alternance informatique Jean-Christophe.jpg" alt="CV de Jean-Christophe Siazon" />
+            <a href="#about" class="popup-close" aria-label="Fermer">×</a>
+          </div>
+        </div>
+
+        <!-- Descriptions SLAM/SISR -->
+        <div class="container">
+          <div class="content-box">
+            <h2>BTS SIO - Option SISR</h2>
+            <p>
+              <strong>SISR</strong> forme des professionnels capables de déployer, administrer et
+              maintenir des infrastructures réseau et des systèmes informatiques.
+            </p>
+            <h3>Débouchés / Métiers</h3>
+            <ul>
+              <li>Administrateur système et réseau</li>
+              <li>Technicien support informatique</li>
+              <li>Responsable sécurité informatique</li>
+              <li>Technicien d’infrastructure</li>
+            </ul>
+          </div>
+
+          <div class="content-box chosen">
+            <h2>BTS SIO - Option SLAM <span class="badge">Choisie ✓</span></h2>
+            <p>
+              <strong>SLAM</strong> prépare à concevoir, développer et maintenir des applications
+              répondant aux besoins des entreprises.
+            </p>
+            <h3>Débouchés / Métiers</h3>
+            <ul>
+              <li>Développeur d'applications</li>
+              <li>Analyste-programmeur</li>
+              <li>Concepteur de solutions logicielles</li>
+              <li>Technicien de maintenance en développement</li>
+              <li>Chef de projet junior</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Compétences -->
+      <section id="skills" class="contenu">
+        <h1>Compétences</h1>
+
+        <!-- Hard Skills -->
+        <div class="skills-section">
+          <h2>Hard Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fas fa-code"></i>
+              <h3>Développement web</h3>
+              <p>HTML, CSS, PHP, SQL, JAVA</p>
+              <a href="#skill-web" class="skill-button">Voir détails</a>
+            </div>
+
+            <div class="skill-card">
+              <i class="fas fa-database"></i>
+              <h3>Bases de données</h3>
+              <p>Conception et optimisation MySQL</p>
+              <a href="#skill-sql" class="skill-button">Voir détails</a>
+            </div>
+
+            <div class="skill-card">
+              <i class="fas fa-cogs"></i>
+              <h3>Programmation en C</h3>
+              <p>Logique bas niveau, projet Snake</p>
+              <a href="#skill-c" class="skill-button">Voir détails</a>
+            </div>
+
+            <div class="skill-card">
+              <i class="fab fa-git-alt"></i>
+              <h3>Git / GitHub</h3>
+              <p>Gestion de versions et branches</p>
+              <a href="#skill-git" class="skill-button">Voir détails</a>
+            </div>
+
+            <div class="skill-card">
+              <i class="fas fa-cloud"></i>
+              <h3>Déploiement Render</h3>
+              <p>Mise en ligne avec Docker</p>
+              <a href="#skill-render" class="skill-button">Voir détails</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-section">
+          <h2>Soft Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fas fa-users"></i>
+              <h3>Travail en équipe</h3>
+              <p>Collaboration et communication</p>
+            </div>
+
+            <div class="skill-card">
+              <i class="fas fa-project-diagram"></i>
+              <h3>Gestion de projet</h3>
+              <p>Organisation et planification</p>
+            </div>
+
+            <div class="skill-card">
+              <i class="fas fa-lightbulb"></i>
+              <h3>Résolution de problèmes</h3>
+              <p>Analyse et créativité</p>
+            </div>
+
+            <div class="skill-card">
+              <i class="fas fa-sync-alt"></i>
+              <h3>Adaptabilité</h3>
+              <p>Apprentissage continu</p>
+            </div>
+
+            <div class="skill-card">
+              <i class="fas fa-eye"></i>
+              <h3>Sens du détail</h3>
+              <p>Précision et rigueur</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popups compétences -->
+      <div id="skill-web" class="popup">
+        <div class="popup-content">
+          <h2>Développement web</h2>
+          <p class="popup-intro">
+            <strong>Contexte :</strong> création de sites et applications web.<br />
+            <strong>Exemple :</strong> plateforme e-enseignement avec PHP et SQL.<br />
+            <strong>Outils :</strong> VS Code, XAMPP.<br />
+            <strong>Mon rôle :</strong> intégration responsive et logique serveur.
+          </p>
+          <a href="#skills" class="popup-close">×</a>
+        </div>
+      </div>
+
+      <div id="skill-sql" class="popup">
+        <div class="popup-content">
+          <h2>Gestion de bases de données</h2>
+          <p class="popup-intro">
+            <strong>Contexte :</strong> conception et correction de schémas.<br />
+            <strong>Exemple :</strong> table utilisateurs avec clés étrangères.<br />
+            <strong>Outils :</strong> MySQL, phpMyAdmin.<br />
+            <strong>Mon rôle :</strong> gestion des contraintes et optimisation.
+          </p>
+          <a href="#skills" class="popup-close">×</a>
+        </div>
+      </div>
+
+      <div id="skill-c" class="popup">
+        <div class="popup-content">
+          <h2>Programmation en C</h2>
+          <p class="popup-intro">
+            <strong>Contexte :</strong> programmation bas niveau pour comprendre la logique machine.<br />
+            <strong>Exemple :</strong> projet Snake en langage C.<br />
+            <strong>Outils :</strong> Dev C++<br />
+            <strong>Mon rôle :</strong> conception et programmation du jeu.
+          </p>
+          <a href="#skills" class="popup-close">×</a>
+        </div>
+      </div>
+
+      <div id="skill-git" class="popup">
+        <div class="popup-content">
+          <h2>Git / GitHub</h2>
+          <p class="popup-intro">
+            <strong>Contexte :</strong> suivi collaboratif du code et organisation.<br />
+            <strong>Exemple :</strong> versionnage de mes projets BTS.<br />
+            <strong>Outils :</strong> GitHub, Trello.<br />
+            <strong>Mon rôle :</strong> gestion des branches, résolution de conflits.
+          </p>
+          <a href="#skills" class="popup-close">×</a>
+        </div>
+      </div>
+
+      <div id="skill-render" class="popup">
+        <div class="popup-content">
+          <h2>Déploiement avec Render</h2>
+          <p class="popup-intro">
+            <strong>Contexte :</strong> mise en ligne d’applications web.<br />
+            <strong>Exemple :</strong> déploiement d’un portfolio en production.<br />
+            <strong>Outils :</strong> Render<br />
+            <strong>Mon rôle :</strong> configuration et suivi du déploiement.
+          </p>
+          <a href="#skills" class="popup-close">×</a>
+        </div>
+      </div>
+
+      <!-- Parcours -->
+      <section id="parcours" class="contenu">
+        <h1>Parcours</h1>
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="timeline-date">2021</div>
+            <div class="timeline-card">
+              <h2>Brevet des collèges</h2>
+              <p>Obtention du Brevet avec mention.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="timeline-date">2022</div>
+            <div class="timeline-card">
+              <h2>Lycée STMG</h2>
+              <p>Entrée au lycée en filière STMG.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item left">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-card">
+              <h2>Baccalauréat</h2>
+              <p>Obtention du Bac Technologique STMG avec mention.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="timeline-date">2024–2026</div>
+            <div class="timeline-card">
+              <h2>BTS SIO SLAM</h2>
+              <p>Formation en alternance dans le développement logiciel et les applications métiers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mon alternance -->
+      <section id="alternance" class="contenu">
+        <h1>Mon alternance</h1>
+
+        <div class="company-box">
+          <div class="company-header">
+            <div class="title-logo">
+              <img src="img/images.jpg" alt="Logo du PICT" class="logo-repertoire zoom" />
+              <h2>Paris Institute of Childcare Training (PICT)</h2>
+            </div>
+            <p class="tagline">Mon employeur principal en alternance</p>
+          </div>
+
+          <div class="company-content">
+            <h3>Présentation</h3>
+            <p>
+              Le Paris Institute of Childcare Training est un centre de formation reconnu dans le
+              domaine de la petite enfance. Il combine pédagogie moderne et apprentissage pratique.
+            </p>
+
+            <h3>Partenariat</h3>
+            <div class="partner">
+              <div class="title-logo">
+                <img src="img/images.png" alt="Logo du Répertoire de Gaspard" class="logo-repertoire zoom" />
+                <h3>Le Répertoire de Gaspard</h3>
+              </div>
+              <p>Agence spécialisée dans le service à la personne et la garde d’enfants, partenaire du PICT.</p>
+            </div>
+
+            <h3>Missions réalisées</h3>
+            <ul>
+              <li><strong>Gestion du parc informatique :</strong> mise à jour et maintenance des machines.</li>
+              <li><strong>Développement web :</strong> manipulation de WordPress avec Elementor pour améliorer le site.</li>
+              <li><strong>Projet applicatif :</strong> conception d’une application web d’inventaire et de gestion des stocks.</li>
+              <li><strong>Support technique :</strong> aide et correction du site du PICT.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projets -->
+      <section id="projets" class="contenu">
+        <h1>Mes projets</h1>
+
+        <!-- Onglets -->
+        <div class="tabs">
+          <button class="tab-button active" data-tab="annee1">Projet scolaire 1ère année</button>
+          <button class="tab-button" data-tab="annee2">Projet scolaire 2ème année</button>
+          <button class="tab-button" data-tab="entreprise">Projet en entreprise</button>
+        </div>
+
+        <!-- Contenu des onglets -->
+        <div class="tab-content active" id="annee1">
+          <div class="project-grid">
+            <div class="content-box">
+              <h2>Free</h2>
+              <p>Site d'intervention pour suivi technique chez Free.</p>
+              <a href="#popup1" class="project-button">Voir les détails</a>
+            </div>
+
+            <div class="content-box">
+              <h2>E-Enseignement</h2>
+              <p>Plateforme e-enseignement pour accéder aux cours et exercices.</p>
+              <a href="#popup2" class="project-button">Voir les détails</a>
+            </div>
+
+            <div class="content-box">
+              <h2>SJC Hardware</h2>
+              <p>Projet autour du hardware dans un contexte simulé.</p>
+              <a href="#popup3" class="project-button">Voir les détails</a>
+            </div>
+
+            <div class="content-box">
+              <h2>To-do</h2>
+              <p>Application web de gestion des tâches.</p>
+              <a href="#popup4" class="project-button">Voir les détails</a>
+            </div>
+
+            <div class="content-box">
+              <h2>GLPI</h2>
+              <p>Mise en place de GLPI à partir d'une VM.</p>
+              <a href="#popup5" class="project-button">Voir les détails</a>
+            </div>
+
+            <div class="content-box">
+              <h2>Snake</h2>
+              <p>Programmation du jeu Snake en langage C.</p>
+              <a href="#popup6" class="project-button">Voir les détails</a>
+            </div>
+
+            <div class="content-box">
+              <h2>Travel Case</h2>
+              <p>Création d’une boutique avec Shopify.</p>
+              <a href="#popup7" class="project-button">Voir les détails</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popups projets -->
+      <div id="popup1" class="popup">
+        <div class="popup-content">
+          <h2>Projet Free</h2>
+          <p class="popup-intro">
+            <strong>Contexte :</strong> suivi technique chez Free.<br />
+            <strong>Objectif :</strong> interface claire pour interventions.
+          </p>
+          <video controls>
+            <source src="img/Enregistrement 2025-02-01 221155.mp4" type="video/mp4" />
+          </video>
+          <a href="#projets" class="popup-close">×</a>
+        </div>
+      </div>
+
+      <div id="popup2" class="popup">
+        <div class="popup-content">
+          <h2>Projet E-Enseignement</h2>
+          <p class="popup-intro">
+            <strong>Contexte :</strong> plateforme d’apprentissage en ligne.<br />
+            <strong>Technologies :</strong> PHP, SQL, HTML/CSS.
+          </p>
+          <video controls>
+            <source src="img/Enregistrement 2025-02-01 22502533.mp4" type="video/mp4" />
+          </video>
+          <a href="#projets" class="popup-close">×</a>
+        </div>
+      </div>
+
+      <div id="popup3" class="popup">
+        <div class="popup-content">
+          <h2>Projet SJC Hardware</h2>
+          <p class="popup-intro">
+            <strong>Contexte :</strong> projet simulé autour du hardware.<br />
+            <strong>Technologies :</strong> HTML, CSS, PHP.
+          </p>
+          <video controls>
+            <source src="img/Enregistrement 2025-06-22 211029.mp4" type="video/mp4" />
+          </video>
+          <a href="#projets" class="popup-close">×</a>
+        </div>
+      </div>
+
+      <div id="popup4" class="popup">
+        <div class="popup-content">
+          <h2>Projet To-do</h2>
+          <p class="popup-intro">
+            <strong>Contexte :</strong> application web de gestion des tâches.<br />
+            <strong>Technologies :</strong> PHP, SQL, HTML/CSS.
+          </p>
+          <video controls>
+            <source src="img/Enregistrement 2025-06-22 215010.mp4" type="video/mp4" />
+          </video>
+          <a href="#projets" class="popup-close">×</a>
+        </div>
+      </div>
+
+      <div id="popup5" class="popup">
+        <div class="popup-content">
+          <h2>Projet GLPI</h2>
+          <p class="popup-intro">
+            <strong>Contexte :</strong> outil de gestion de parc informatique.<br />
+            <strong>Objectif :</strong> déployer GLPI sur une VM.
+          </p>
+          <iframe src="img/GLPI.pdf" title="GLPI" style="border:none; width:90%; height:80vh; border-radius:10px;"></iframe>
+          <a href="#projets" class="popup-close">×</a>
+        </div>
+      </div>
+
+      <div id="popup6" class="popup">
+        <div class="popup-content">
+          <h2>Projet Snake</h2>
+          <p class="popup-intro">
+            <strong>Contexte :</strong> projet en langage C.<br />
+            <strong>Objectif :</strong> programmer le jeu Snake.
+          </p>
+          <iframe src="img/Projet_ Snake.pdf" title="Projet Snake" style="border:none; width:90%; height:80vh; border-radius:10px;"></iframe>
+          <a href="#projets" class="popup-close">×</a>
+        </div>
+      </div>
+
+      <div id="popup7" class="popup">
+        <div class="popup-content">
+          <h2>Projet Travel Case</h2>
+          <p class="popup-intro">
+            <strong>Contexte :</strong> projet en entreprise.<br />
+            <strong>Objectif :</strong> créer une boutique Shopify.
+          </p>
+          <iframe src="img/Shopify.pdf" title="Shopify" style="border:none; width:90%; height:80vh; border-radius:10px;"></iframe>
+          <a href="#projets" class="popup-close">×</a>
+        </div>
+      </div>
+
+      <!-- Veille Technologique -->
+      <section id="veille" class="veille-section">
+        <h2>Veille technologique</h2>
         <p>
-          Agence spécialisée dans le service à la personne et la garde d’enfants, partenaire direct du PICT. 
-          Ensemble, ils forment une structure complémentaire qui associe formation et accompagnement des familles.
+          J’ai choisi de réaliser ma veille technologique sur <strong>l’accessibilité web</strong>, 
+          c’est‑à‑dire l’ensemble des bonnes pratiques qui permettent à tous les utilisateurs, 
+          y compris les personnes en situation de handicap, de naviguer facilement sur un site internet.
         </p>
-      </div>
+        <p>
+          En suivant des newsletters et blogs spécialisés, j’ai découvert plusieurs tendances récentes : 
+          <br>– Contrastes renforcés pour une meilleure lisibilité, 
+          <br>– Navigation au clavier, 
+          <br>– Responsive design pour mobiles et tablettes, 
+          <br>– Balises ARIA pour les lecteurs d’écran.
+        </p>
+        <p>
+          Cette veille me permet d’améliorer mon portfolio et mes projets en les rendant plus inclusifs 
+          et accessibles, tout en montrant ma capacité à allier technique et sens de l’utilisateur.
+        </p>
+      </section>
 
-      <h3>Missions réalisées</h3>
-      <ul>
-        <li><strong>Gestion du parc informatique :</strong> mise à jour et maintenance des machines.</li>
-        <li><strong>Développement web :</strong> manipulation de WordPress avec Elementor pour améliorer le site du Le Répertoire de Gaspard.</li>
-        <li><strong>Projet applicatif :</strong> conception d’une application web d’inventaire et de gestion des stocks.</li>
-        <li><strong>Support technique :</strong> aide et correction du site du PICT.</li>
-      </ul>
-    </div>
-  </div>
-</section>
 
+      <!-- Contact -->
+      <section id="contact" class="contact-section">
+        <h2>Me contacter</h2>
+        <p>N’hésitez pas à m’envoyer un message pour toute question ou collaboration.</p>
 
-  <!-- Projets -->
-  <section id="projets" class="contenu">
-    <h1>Mes projets</h1>
-    <div class="carousel">
-      <div class="carousel-track">
-        <div class="content-box">
-          <h2>Free</h2>
-          <p>Site d'intervention pour suivi technique chez Free.</p>
-          <a href="#popup1" class="project-button">Voir les détails</a>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name"><i class="fas fa-user"></i> Nom</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+          </div>
+
+          <button type="submit" class="contact-button">
+            <i class="fas fa-paper-plane"></i> Envoyer
+          </button>
+        </form>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>À propos</h3>
+          <p>Portfolio BTS SIO SLAM — Jean-Christophe</p>
+          <p>Développement web, gestion de projet, design UI/UX</p>
         </div>
 
-        <div class="content-box">
-          <h2>E-Enseignement</h2>
-          <p>Plateforme e-enseignement pour accéder aux cours et exercices.</p>
-          <a href="#popup2" class="project-button">Voir les détails</a>
+        <div class="footer-section">
+          <h3>Liens utiles</h3>
+          <a href="#skills">Compétences</a>
+          <a href="#projets">Projets</a>
+          <a href="#contact">Contact</a>
         </div>
 
-        <div class="content-box">
-          <h2>SJC Hardware</h2>
-          <p>Projet autour du hardware dans un contexte d'entreprise simulée.</p>
-          <a href="#popup3" class="project-button">Voir les détails</a>
-        </div>
-
-        <div class="content-box">
-          <h2>To-do</h2>
-          <p>Application web de gestion des tâches.</p>
-          <a href="#popup4" class="project-button">Voir les détails</a>
-        </div>
-
-        <div class="content-box">
-          <h2>GLPI</h2>
-          <p>Mise en place de GLPI à partir d'une VM.</p>
-          <a href="#popup5" class="project-button">Voir les détails</a>
-        </div>
-
-        <div class="content-box">
-          <h2>Snake</h2>
-          <p>Programmation du jeu Snake en langage C.</p>
-          <a href="#popup6" class="project-button">Voir les détails</a>
-        </div>
-
-        <div class="content-box">
-          <h2>Travel Case</h2>
-          <p>Création d’une boutique avec Shopify.</p>
-          <a href="#popup7" class="project-button">Voir les détails</a>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:siazon.jeanchristophe.pro@gmail.com">siazon.jeanchristophe.pro@gmail.com</a>
+          </p>
+          <p>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+33619737802">+33 6 19 73 78 02</a>
+          </p>
+          <div class="footer-icons">
+            <a href="https://github.com/JC12062006/portfolio" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jean-christophe-siazon-95aa462ba/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
 
-    <!-- Pop-ups projets -->
-    <div id="popup1" class="popup">
-      <div class="popup-content">
-        <video controls>
-          <source src="img/Enregistrement 2025-02-01 221155.mp4" type="video/mp4"/>
-        </video>
-        <a href="#projets" class="popup-close">×</a>
-      </div>
-    </div>
+    <script>
+      const buttons = document.querySelectorAll('.tab-button');
+      const contents = document.querySelectorAll('.tab-content');
 
-    <div id="popup2" class="popup">
-      <div class="popup-content">
-        <video controls>
-          <source src="img/Enregistrement 2025-02-01 22502533.mp4" type="video/mp4"/>
-        </video>
-        <a href="#projets" class="popup-close">×</a>
-      </div>
-    </div>
-
-    <div id="popup3" class="popup">
-      <div class="popup-content">
-        <video controls>
-          <source src="img/Enregistrement 2025-06-22 211029.mp4" type="video/mp4"/>
-        </video>
-        <a href="#projets" class="popup-close">×</a>
-      </div>
-    </div>
-
-    <div id="popup4" class="popup">
-      <div class="popup-content">
-        <video controls>
-          <source src="img/Enregistrement 2025-06-22 215010.mp4" type="video/mp4"/>
-        </video>
-        <a href="#projets" class="popup-close">×</a>
-      </div>
-    </div>
-
-    <div id="popup5" class="popup">
-      <div class="popup-content">
-        <iframe src="img/GLPI.pdf" title="GLPI" style="border: none; width: 500px; height: 500px;"></iframe>
-        <a href="#projets" class="popup-close">×</a>
-      </div>
-    </div>
-
-    <div id="popup6" class="popup">
-      <div class="popup-content">
-        <iframe src="img/Projet_ Snake.pdf" title="Projet Snake" style="border: none; width: 500px; height: 500px;"></iframe>
-        <a href="#projets" class="popup-close">×</a>
-      </div>
-    </div>
-
-    <div id="popup7" class="popup">
-      <div class="popup-content">
-        <iframe src="img/Shopify.pdf" title="Shopify" style="border: none; width: 500px; height: 500px;"></iframe>
-        <a href="#projets" class="popup-close">×</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-<footer id="contact">
-  <div class="footer-container">
-    
-    <!-- Contact -->
-    <div class="footer-section">
-      <h3>Contact</h3>
-      <p><a href="mailto:siazon.jeanchristophe.pro@gmail.com">siazon.jeanchristophe.pro@gmail.com</a></p>
-      <p><a href="tel:+33619737802">+33 6 19 73 78 02</a></p>
-    </div>
-
-    <!-- Réseaux -->
-    <div class="footer-section">
-      <h3>Réseaux</h3>
-      <div class="footer-icons">
-        <a href="https://github.com/JC12062006/portfolio" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/jean-christophe-siazon-95aa462ba/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="footer-section">
-      <h3>© 2025</h3>
-      <p>Jean-Christophe Siazon — Portfolio BTS SIO SLAM</p>
-    </div>
-
-  </div>
-</footer>
-
-</body>
+      buttons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          buttons.forEach((b) => b.classList.remove('active'));
+          contents.forEach((c) => c.classList.remove('active'));
+          btn.classList.add('active');
+          const tab = document.getElementById(btn.dataset.tab);
+          if (tab) tab.classList.add('active');
+        });
+      });
+    </script>
+  </body>
 </html>
